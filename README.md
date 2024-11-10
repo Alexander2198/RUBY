@@ -1,4 +1,4 @@
-# "Hello World" project in Flask
+# "Hello World" project in RUBY
 
 This is a simple **Ryby** project.The project consist in sum of numbers and calculate the result. The project is dockerized, so you can easily run it on any system that has **Docker** installed.
 
