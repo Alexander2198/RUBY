@@ -5,7 +5,7 @@ FROM ruby:3.3.6
 WORKDIR /app
 
 # Copiar el archivo Gemfile y Gemfile.lock al contenedor
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile Gemfile.lock ./ 
 
 # Instalar las dependencias de Ruby
 RUN bundle install

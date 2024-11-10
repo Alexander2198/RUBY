@@ -1,31 +1,10 @@
 <!-- views/index.erb -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculadora de Suma</title>
-</head>
-<body>
-  <h1>Calculadora de Suma</h1>
-  
-  <!-- Formulario para ingresar los números -->
-  <form action="/" method="POST">
-    <label for="numero1">Número 1:</label>
-    <input type="text" id="numero1" name="numero1" required>
-    <br><br>
-    
-    <label for="numero2">Número 2:</label>
-    <input type="text" id="numero2" name="numero2" required>
-    <br><br>
-    
-    <button type="submit">Calcular</button>
-  </form>
+<form action="/" method="post">
+  Número 1: <input type="text" name="numero1" /><br>
+  Número 2: <input type="text" name="numero2" /><br>
+  <input type="submit" value="Calcular Suma" />
+</form>
 
- 
-  <% if @suma %>
-    <br><br>
-    <h3>El resultado de la suma es: <%= @suma %></h3>
-  <% end %>
-
-</body>
-</html>
+<% if @suma %>
+  <h2>Resultado: <%= @suma %></h2>
+<% end %>

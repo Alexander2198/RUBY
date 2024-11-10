@@ -1,5 +1,8 @@
 require 'sinatra'
 
+# Configurar Sinatra para escuchar en todas las interfaces (0.0.0.0)
+set :bind, '0.0.0.0'
+
 # Página de inicio con el formulario y el cálculo
 get '/' do
   erb :index
@@ -16,4 +19,3 @@ post '/' do
   # Volver a la misma página mostrando el resultado
   erb :index
 end
-
