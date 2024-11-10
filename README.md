@@ -28,7 +28,7 @@ and start in http://0.0.0.0:4567 or http://localhost:4567/
 ## 2nd FORM to run the project (DOCKER HUB)  PENDIENTE 
 we create a folder in cmd where the project will be saved
 - inside the folder run the following command (creates the docker image)
-* docker pull alexanderc7777/flask-app
+* docker pull alexanderc7777/ruby-calculator
 - finally we put:
-* docker run -p 5000:5000 --name app alexanderc7777/flask-app
-# ready our project will be running at http://127.0.0.1:5000
+* docker run -p 4567:4567 --name app alexanderc7777/ruby-calculator
+# ready our project will be running at http://127.0.0.1:4567 or http://localhost:4567
