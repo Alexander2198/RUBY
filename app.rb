@@ -1,6 +1,7 @@
 require 'sinatra'
 
-# Configurar Sinatra para escuchar en todas las interfaces (0.0.0.0)
+# Usar el puerto asignado por Railway
+set :port, ENV.fetch("PORT", 8080)
 set :bind, '0.0.0.0'
 
 # Página de inicio con el formulario y el cálculo
